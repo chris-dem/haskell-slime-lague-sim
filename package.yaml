@@ -1,0 +1,22 @@
+name: app
+version: 0.1.0.0
+synopsis: "Sample miso app"
+category: Web
+
+executables:
+  app:
+    main: Main.hs
+    source-dirs: app
+    language: GHC2024
+    ghc-options: -threaded
+    dependencies:
+      - base
+      - containers
+      - random
+      - mtl
+      - vector
+      - linear
+      - microlens-platform
+      - microlens-mtl
+      - MonadRandom
+      - gloss

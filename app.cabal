@@ -1,0 +1,35 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.39.0.
+--
+-- see: https://github.com/sol/hpack
+
+name:           app
+version:        0.1.0.0
+synopsis:       Sample miso app
+category:       Web
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+
+executable app
+  main-is: Main.hs
+  other-modules:
+      App
+      Slime
+      Paths_app
+  hs-source-dirs:
+      app
+  ghc-options: -threaded
+  build-depends:
+      MonadRandom
+    , base
+    , containers
+    , gloss
+    , linear
+    , microlens-mtl
+    , microlens-platform
+    , mtl
+    , random
+    , vector
+  default-language: GHC2024
