@@ -6,8 +6,8 @@ cabal-version: 1.12
 
 name:           app
 version:        0.1.0.0
-synopsis:       Sample miso app
-category:       Web
+synopsis:       Slime Drawing app
+category:       Desktop
 license:        BSD3
 license-file:   LICENSE
 build-type:     Simple
@@ -26,7 +26,7 @@ executable app
     , base
     , containers
     , gloss
-    , linear
+    , massiv
     , microlens-mtl
     , microlens-platform
     , mtl

@@ -8,9 +8,9 @@ import Control.Monad.State (MonadState (get), StateT (StateT, runStateT), evalSt
 import Data.Bifunctor (Bifunctor (bimap))
 import Data.Maybe (fromJust, isJust, mapMaybe)
 import Data.Tuple (swap)
-import Data.Vector.Unboxed qualified as V
-import Data.Vector.Unboxed.Mutable qualified as MV
 import Debug.Trace (traceShow)
+import Data.Massiv.Array as A
+import qualified Data.Massiv.Array.Mutable as MA
 import GHC.Float qualified as Math
 import GHC.ST (ST (ST))
 import Graphics.Gloss
@@ -46,7 +46,7 @@ bgColour = black
 drawing :: Picture
 drawing = color white $ thickCircle 80 5
 
-type ImageType = V.Vector Float
+type ImageType = A.Array U Ix2 Float
 
 data SimSet = SimSet
     { _movSpeed :: Float

@@ -1,7 +1,19 @@
 name: app
 version: 0.1.0.0
-synopsis: "Sample miso app"
-category: Web
+synopsis: "Slime Drawing app"
+category: Desktop
+
+dependencies:
+  - base
+  - containers
+  - random
+  - mtl
+  - vector
+  - microlens-platform
+  - microlens-mtl
+  - MonadRandom
+  - gloss
+  - massiv
 
 executables:
   app:
@@ -9,14 +21,4 @@ executables:
     source-dirs: app
     language: GHC2024
     ghc-options: -threaded
-    dependencies:
-      - base
-      - containers
-      - random
-      - mtl
-      - vector
-      - linear
-      - microlens-platform
-      - microlens-mtl
-      - MonadRandom
-      - gloss
+

@@ -26,13 +26,16 @@ AnimationState	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/
 AnimationUpdate	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/programs/AnimationDemo.hs	27;"	C
 App	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/Main.hs	102;"	t
 App	/Users/christosdemetriou/projects/slime-hask-simulation/app/App.hs	3;"	m
+App	app/App.hs	3;"	m
 AppEvent	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/Types/Internal.hs	399;"	C
 AppM	/Users/christosdemetriou/projects/slime-hask-simulation/app/App.hs	68;"	t
+AppM	app/App.hs	68;"	t
 AppState	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/programs/TabularListDemo.hs	38;"	t
 AppState	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/programs/TailDemo.hs	20;"	t
 AppState	/Users/christosdemetriou/projects/hask-tui-drawing/lib/Lib/AppState.hs	10;"	t
 AppState	/Users/christosdemetriou/projects/hask-tui-drawing/lib/Lib/StateLib.hs	13;"	t
 AppState	/Users/christosdemetriou/projects/slime-hask-simulation/app/App.hs	63;"	t
+AppState	app/App.hs	63;"	t
 AppState	/Users/christosdemetriou/projects/hask-tui-drawing/lib/Lib/AppState.hs	7;"	m
 AttrMap	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/AttrMap.hs	80;"	t
 AttrMap	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/AttrMap.hs	24;"	m
@@ -193,6 +196,7 @@ Image	/Users/christosdemetriou/projects/hask-tui-drawing/lib/Lib/Image.hs	21;"	t
 Image	/Users/christosdemetriou/projects/hask-tui-drawing/lib/Image.hs	1;"	m
 Image	/Users/christosdemetriou/projects/hask-tui-drawing/lib/Lib/Image.hs	6;"	m
 ImageType	/Users/christosdemetriou/projects/slime-hask-simulation/app/App.hs	49;"	t
+ImageType	app/App.hs	49;"	t
 IncrementEvent	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/programs/CustomKeybindingDemo.hs	33;"	C
 Info	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/programs/MouseDemo.hs	25;"	C
 Input	/Users/christosdemetriou/projects/ppad-black-box-visualiser/lib/Lib/CircuitType.hs	42;"	C
@@ -260,6 +264,7 @@ Main	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11
 Main	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/Main.hs	3;"	m
 Main	/Users/christosdemetriou/projects/ppad-black-box-visualiser/app/Main.hs	3;"	m
 Main	/Users/christosdemetriou/projects/slime-hask-simulation/app/Main.hs	3;"	m
+Main	app/Main.hs	3;"	m
 ManagerM	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/Animation.hs	328;"	t
 ManagerState	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/Animation.hs	304;"	t
 Max	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/Widgets/Core.hs	394;"	C
@@ -312,6 +317,8 @@ PackageInfo_app	/Users/christosdemetriou/projects/ppad-black-box-visualiser/dist
 PackageInfo_app	/Users/christosdemetriou/projects/ppad-black-box-visualiser/dist-newstyle/build/aarch64-osx/ghc-9.12.2/app-0.1.0.0/t/spec/build/spec/autogen/PackageInfo_app.hs	19;"	m
 PackageInfo_app	/Users/christosdemetriou/projects/ppad-black-box-visualiser/dist-newstyle/build/aarch64-osx/ghc-9.12.2/app-0.1.0.0/x/app/build/app/autogen/PackageInfo_app.hs	19;"	m
 PackageInfo_app	/Users/christosdemetriou/projects/slime-hask-simulation/dist-newstyle/build/aarch64-osx/ghc-9.12.2/app-0.1.0.0/x/app/build/app/autogen/PackageInfo_app.hs	19;"	m
+PackageInfo_app	/Users/christosdemetriou/projects/slime-hask-simulation/dist-newstyle/build/aarch64-osx/ghc-9.14.1/app-0.1.0.0/x/app/build/app/autogen/PackageInfo_app.hs	19;"	m
+PackageInfo_app	dist-newstyle/build/aarch64-osx/ghc-9.14.1/app-0.1.0.0/x/app/build/app/autogen/PackageInfo_app.hs	19;"	m
 PackageInfo_brick	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/dist/build/autogen/PackageInfo_brick.hs	19;"	m
 Pad	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/Widgets/Core.hs	392;"	C
 Padding	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/Widgets/Core.hs	392;"	t
@@ -324,6 +331,8 @@ Paths_app	/Users/christosdemetriou/projects/ppad-black-box-visualiser/dist-newst
 Paths_app	/Users/christosdemetriou/projects/ppad-black-box-visualiser/dist-newstyle/build/aarch64-osx/ghc-9.12.2/app-0.1.0.0/t/spec/build/spec/autogen/Paths_app.hs	25;"	m
 Paths_app	/Users/christosdemetriou/projects/ppad-black-box-visualiser/dist-newstyle/build/aarch64-osx/ghc-9.12.2/app-0.1.0.0/x/app/build/app/autogen/Paths_app.hs	25;"	m
 Paths_app	/Users/christosdemetriou/projects/slime-hask-simulation/dist-newstyle/build/aarch64-osx/ghc-9.12.2/app-0.1.0.0/x/app/build/app/autogen/Paths_app.hs	25;"	m
+Paths_app	/Users/christosdemetriou/projects/slime-hask-simulation/dist-newstyle/build/aarch64-osx/ghc-9.14.1/app-0.1.0.0/x/app/build/app/autogen/Paths_app.hs	25;"	m
+Paths_app	dist-newstyle/build/aarch64-osx/ghc-9.14.1/app-0.1.0.0/x/app/build/app/autogen/Paths_app.hs	25;"	m
 Paths_brick	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/dist/build/autogen/Paths_brick.hs	25;"	m
 Point	/Users/christosdemetriou/projects/hask-tui-drawing/lib/Lib/CoordAlg.hs	15;"	t
 Ppad	/Users/christosdemetriou/projects/ppad-black-box-visualiser/lib/Lib/PPAD/PpadDef.hs	1;"	m
@@ -367,10 +376,14 @@ ShowCompositeField	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newst
 ShowFocusedFieldOnly	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/Forms.hs	153;"	C
 Shutdown	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/Animation.hs	149;"	C
 SimSet	/Users/christosdemetriou/projects/slime-hask-simulation/app/App.hs	51;"	t
+SimSet	app/App.hs	51;"	t
 SimState	/Users/christosdemetriou/projects/slime-hask-simulation/app/App.hs	57;"	t
+SimState	app/App.hs	57;"	t
 Size	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/Types/Internal.hs	122;"	t
 Slime	/Users/christosdemetriou/projects/slime-hask-simulation/app/Slime.hs	10;"	t
+Slime	app/Slime.hs	10;"	t
 Slime	/Users/christosdemetriou/projects/slime-hask-simulation/app/Slime.hs	3;"	m
+Slime	app/Slime.hs	3;"	m
 Splittable	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/Widgets/List.hs	150;"	c
 St	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/programs/AnimationDemo.hs	30;"	t
 St	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/programs/CustomEventDemo.hs	38;"	t
@@ -446,6 +459,7 @@ Widget	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-
 _address	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/programs/FormDemo.hs	61;"	f
 _age	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/programs/FormDemo.hs	60;"	f
 _angleDt	/Users/christosdemetriou/projects/slime-hask-simulation/app/App.hs	54;"	f
+_angleDt	app/App.hs	54;"	f
 _animation1	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/programs/AnimationDemo.hs	33;"	f
 _animation2	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/programs/AnimationDemo.hs	34;"	f
 _animation3	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/programs/AnimationDemo.hs	35;"	f
@@ -471,6 +485,7 @@ _edit2	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-
 _focusRing	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/programs/EditDemo.hs	31;"	f
 _handed	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/programs/FormDemo.hs	63;"	f
 _image	/Users/christosdemetriou/projects/slime-hask-simulation/app/App.hs	60;"	f
+_image	app/App.hs	60;"	f
 _keyConfig	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/programs/CustomKeybindingDemo.hs	54;"	f
 _lastClickedElement	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/programs/ViewportScrollbarsDemo.hs	77;"	f
 _lastKey	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/programs/CustomKeybindingDemo.hs	56;"	f
@@ -484,19 +499,25 @@ _managerStateOutChan	/Users/christosdemetriou/projects/hask-tui-drawing/dist-new
 _middleLayerLocation	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/programs/LayerDemo.hs	34;"	f
 _modular	/Users/christosdemetriou/projects/hask-tui-drawing/lib/Lib/CoordAlg.hs	26;"	f
 _movSpeed	/Users/christosdemetriou/projects/slime-hask-simulation/app/App.hs	52;"	f
+_movSpeed	app/App.hs	52;"	f
 _name	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/programs/FormDemo.hs	59;"	f
 _numSlimes	/Users/christosdemetriou/projects/slime-hask-simulation/app/App.hs	53;"	f
+_numSlimes	app/App.hs	53;"	f
 _password	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/programs/FormDemo.hs	64;"	f
 _pixels	/Users/christosdemetriou/projects/hask-tui-drawing/lib/Lib/Image.hs	22;"	f
 _pos	/Users/christosdemetriou/projects/slime-hask-simulation/app/Slime.hs	11;"	f
+_pos	app/Slime.hs	11;"	f
 _prose	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/programs/MouseDemo.hs	31;"	f
 _ridesBike	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/programs/FormDemo.hs	62;"	f
 _runs	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Data/IMap.hs	35;"	f
 _sAngle	/Users/christosdemetriou/projects/slime-hask-simulation/app/Slime.hs	12;"	f
+_sAngle	app/Slime.hs	12;"	f
 _settings	/Users/christosdemetriou/projects/slime-hask-simulation/app/App.hs	59;"	f
+_settings	app/App.hs	59;"	f
 _shouldQuit	/Users/christosdemetriou/projects/hask-tui-drawing/lib/Lib/AppState.hs	11;"	f
 _showLabel	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/programs/ProgressBarDemo.hs	30;"	f
 _slimes	/Users/christosdemetriou/projects/slime-hask-simulation/app/App.hs	58;"	f
+_slimes	app/App.hs	58;"	f
 _stAnimationManager	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/programs/AnimationDemo.hs	31;"	f
 _stCounter	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/programs/CustomEventDemo.hs	40;"	f
 _stExternalInput	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/programs/SuspendAndResumeDemo.hs	32;"	f
@@ -542,6 +563,7 @@ addNode	/Users/christosdemetriou/projects/ppad-black-box-visualiser/lib/Lib/Grap
 addOffset	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/Animation/Clock.hs	41;"	f
 addP	/Users/christosdemetriou/projects/hask-tui-drawing/lib/Lib/CoordAlg.hs	40;"	f
 addP	/Users/christosdemetriou/projects/slime-hask-simulation/app/App.hs	128;"	f
+addP	app/App.hs	128;"	f
 addResultOffset	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/Widgets/Core.hs	215;"	f
 addScrollRequest	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/Main.hs	589;"	f
 addToKeys	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Data/IMap.hs	144;"	f
@@ -649,6 +671,7 @@ availWidth	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/
 bg	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/Util.hs	57;"	f
 bgColour	/Users/christosdemetriou/projects/ppad-black-box-visualiser/app/Main.hs	11;"	f
 bgColour	/Users/christosdemetriou/projects/slime-hask-simulation/app/App.hs	43;"	f
+bgColour	app/App.hs	43;"	f
 bind	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/Keybindings/KeyConfig.hs	222;"	f
 binding	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/Keybindings/KeyConfig.hs	74;"	f
 bindir	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/build/aarch64-osx/ghc-9.12.2/app-0.1.0.0/build/autogen/Paths_app.hs	98;"	f
@@ -659,6 +682,8 @@ bindir	/Users/christosdemetriou/projects/ppad-black-box-visualiser/dist-newstyle
 bindir	/Users/christosdemetriou/projects/ppad-black-box-visualiser/dist-newstyle/build/aarch64-osx/ghc-9.12.2/app-0.1.0.0/t/spec/build/spec/autogen/Paths_app.hs	98;"	f
 bindir	/Users/christosdemetriou/projects/ppad-black-box-visualiser/dist-newstyle/build/aarch64-osx/ghc-9.12.2/app-0.1.0.0/x/app/build/app/autogen/Paths_app.hs	98;"	f
 bindir	/Users/christosdemetriou/projects/slime-hask-simulation/dist-newstyle/build/aarch64-osx/ghc-9.12.2/app-0.1.0.0/x/app/build/app/autogen/Paths_app.hs	98;"	f
+bindir	/Users/christosdemetriou/projects/slime-hask-simulation/dist-newstyle/build/aarch64-osx/ghc-9.14.1/app-0.1.0.0/x/app/build/app/autogen/Paths_app.hs	98;"	f
+bindir	dist-newstyle/build/aarch64-osx/ghc-9.14.1/app-0.1.0.0/x/app/build/app/autogen/Paths_app.hs	98;"	f
 border	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/Widgets/Border.hs	70;"	f
 borderAttr	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/Widgets/Border.hs	46;"	f
 borderConfiguration	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/Widgets/Table.hs	263;"	f
@@ -716,6 +741,8 @@ catchIO	/Users/christosdemetriou/projects/ppad-black-box-visualiser/dist-newstyl
 catchIO	/Users/christosdemetriou/projects/ppad-black-box-visualiser/dist-newstyle/build/aarch64-osx/ghc-9.12.2/app-0.1.0.0/t/spec/build/spec/autogen/Paths_app.hs	41;"	f
 catchIO	/Users/christosdemetriou/projects/ppad-black-box-visualiser/dist-newstyle/build/aarch64-osx/ghc-9.12.2/app-0.1.0.0/x/app/build/app/autogen/Paths_app.hs	41;"	f
 catchIO	/Users/christosdemetriou/projects/slime-hask-simulation/dist-newstyle/build/aarch64-osx/ghc-9.12.2/app-0.1.0.0/x/app/build/app/autogen/Paths_app.hs	41;"	f
+catchIO	/Users/christosdemetriou/projects/slime-hask-simulation/dist-newstyle/build/aarch64-osx/ghc-9.14.1/app-0.1.0.0/x/app/build/app/autogen/Paths_app.hs	41;"	f
+catchIO	dist-newstyle/build/aarch64-osx/ghc-9.14.1/app-0.1.0.0/x/app/build/app/autogen/Paths_app.hs	41;"	f
 center	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/Widgets/Center.hs	129;"	f
 centerAbout	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/Widgets/Center.hs	148;"	f
 centerLayer	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/Widgets/Center.hs	143;"	f
@@ -762,6 +789,8 @@ copyright	/Users/christosdemetriou/projects/ppad-black-box-visualiser/dist-newst
 copyright	/Users/christosdemetriou/projects/ppad-black-box-visualiser/dist-newstyle/build/aarch64-osx/ghc-9.12.2/app-0.1.0.0/t/spec/build/spec/autogen/PackageInfo_app.hs	42;"	f
 copyright	/Users/christosdemetriou/projects/ppad-black-box-visualiser/dist-newstyle/build/aarch64-osx/ghc-9.12.2/app-0.1.0.0/x/app/build/app/autogen/PackageInfo_app.hs	42;"	f
 copyright	/Users/christosdemetriou/projects/slime-hask-simulation/dist-newstyle/build/aarch64-osx/ghc-9.12.2/app-0.1.0.0/x/app/build/app/autogen/PackageInfo_app.hs	42;"	f
+copyright	/Users/christosdemetriou/projects/slime-hask-simulation/dist-newstyle/build/aarch64-osx/ghc-9.14.1/app-0.1.0.0/x/app/build/app/autogen/PackageInfo_app.hs	42;"	f
+copyright	dist-newstyle/build/aarch64-osx/ghc-9.14.1/app-0.1.0.0/x/app/build/app/autogen/PackageInfo_app.hs	42;"	f
 createEmpty	/Users/christosdemetriou/projects/hask-tui-drawing/lib/Lib/Image.hs	31;"	f
 createFromTerminal	/Users/christosdemetriou/projects/hask-tui-drawing/lib/Lib/Image.hs	34;"	f
 crop	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/BorderMap.hs	190;"	f
@@ -818,6 +847,8 @@ datadir	/Users/christosdemetriou/projects/ppad-black-box-visualiser/dist-newstyl
 datadir	/Users/christosdemetriou/projects/ppad-black-box-visualiser/dist-newstyle/build/aarch64-osx/ghc-9.12.2/app-0.1.0.0/t/spec/build/spec/autogen/Paths_app.hs	98;"	f
 datadir	/Users/christosdemetriou/projects/ppad-black-box-visualiser/dist-newstyle/build/aarch64-osx/ghc-9.12.2/app-0.1.0.0/x/app/build/app/autogen/Paths_app.hs	98;"	f
 datadir	/Users/christosdemetriou/projects/slime-hask-simulation/dist-newstyle/build/aarch64-osx/ghc-9.12.2/app-0.1.0.0/x/app/build/app/autogen/Paths_app.hs	98;"	f
+datadir	/Users/christosdemetriou/projects/slime-hask-simulation/dist-newstyle/build/aarch64-osx/ghc-9.14.1/app-0.1.0.0/x/app/build/app/autogen/Paths_app.hs	98;"	f
+datadir	dist-newstyle/build/aarch64-osx/ghc-9.14.1/app-0.1.0.0/x/app/build/app/autogen/Paths_app.hs	98;"	f
 dbAttr	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/Types/Internal.hs	349;"	f
 dbSegments	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/Types/Internal.hs	353;"	f
 dbStyle	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/Types/Internal.hs	345;"	f
@@ -851,6 +882,7 @@ drawImage	/Users/christosdemetriou/projects/hask-tui-drawing/lib/Lib/Image.hs	42
 drawListElements	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/Widgets/List.hs	338;"	f
 drawRowBorders	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/Widgets/Table.hs	106;"	f
 drawSquare	/Users/christosdemetriou/projects/slime-hask-simulation/app/App.hs	104;"	f
+drawSquare	app/App.hs	104;"	f
 drawSurroundingBorder	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/Widgets/Table.hs	105;"	f
 drawUI	/Users/christosdemetriou/projects/hask-tui-drawing/app/Main.hs	117;"	f
 drawUI	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/programs/AnimationDemo.hs	44;"	f
@@ -873,6 +905,7 @@ drawUi	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-
 drawUi	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/programs/VisibilityDemo.hs	60;"	f
 drawing	/Users/christosdemetriou/projects/ppad-black-box-visualiser/app/Main.hs	14;"	f
 drawing	/Users/christosdemetriou/projects/slime-hask-simulation/app/App.hs	46;"	f
+drawing	app/App.hs	46;"	f
 drawingArea	/Users/christosdemetriou/projects/hask-tui-drawing/app/Main.hs	72;"	f
 dynBorderFromDirections	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/Widgets/Border.hs	157;"	f
 dynlibdir	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/build/aarch64-osx/ghc-9.12.2/app-0.1.0.0/build/autogen/Paths_app.hs	98;"	f
@@ -883,6 +916,8 @@ dynlibdir	/Users/christosdemetriou/projects/ppad-black-box-visualiser/dist-newst
 dynlibdir	/Users/christosdemetriou/projects/ppad-black-box-visualiser/dist-newstyle/build/aarch64-osx/ghc-9.12.2/app-0.1.0.0/t/spec/build/spec/autogen/Paths_app.hs	98;"	f
 dynlibdir	/Users/christosdemetriou/projects/ppad-black-box-visualiser/dist-newstyle/build/aarch64-osx/ghc-9.12.2/app-0.1.0.0/x/app/build/app/autogen/Paths_app.hs	98;"	f
 dynlibdir	/Users/christosdemetriou/projects/slime-hask-simulation/dist-newstyle/build/aarch64-osx/ghc-9.12.2/app-0.1.0.0/x/app/build/app/autogen/Paths_app.hs	98;"	f
+dynlibdir	/Users/christosdemetriou/projects/slime-hask-simulation/dist-newstyle/build/aarch64-osx/ghc-9.14.1/app-0.1.0.0/x/app/build/app/autogen/Paths_app.hs	98;"	f
+dynlibdir	dist-newstyle/build/aarch64-osx/ghc-9.14.1/app-0.1.0.0/x/app/build/app/autogen/Paths_app.hs	98;"	f
 eBottom	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/Types/Common.hs	51;"	f
 eLeft	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/Types/Common.hs	51;"	f
 eRight	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/Types/Common.hs	51;"	f
@@ -1018,6 +1053,8 @@ getBinDir	/Users/christosdemetriou/projects/ppad-black-box-visualiser/dist-newst
 getBinDir	/Users/christosdemetriou/projects/ppad-black-box-visualiser/dist-newstyle/build/aarch64-osx/ghc-9.12.2/app-0.1.0.0/t/spec/build/spec/autogen/Paths_app.hs	67;"	f
 getBinDir	/Users/christosdemetriou/projects/ppad-black-box-visualiser/dist-newstyle/build/aarch64-osx/ghc-9.12.2/app-0.1.0.0/x/app/build/app/autogen/Paths_app.hs	67;"	f
 getBinDir	/Users/christosdemetriou/projects/slime-hask-simulation/dist-newstyle/build/aarch64-osx/ghc-9.12.2/app-0.1.0.0/x/app/build/app/autogen/Paths_app.hs	67;"	f
+getBinDir	/Users/christosdemetriou/projects/slime-hask-simulation/dist-newstyle/build/aarch64-osx/ghc-9.14.1/app-0.1.0.0/x/app/build/app/autogen/Paths_app.hs	67;"	f
+getBinDir	dist-newstyle/build/aarch64-osx/ghc-9.14.1/app-0.1.0.0/x/app/build/app/autogen/Paths_app.hs	67;"	f
 getContext	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/Types/Internal.hs	158;"	f
 getCursorPosition	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/Widgets/Edit.hs	210;"	f
 getDataDir	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/build/aarch64-osx/ghc-9.12.2/app-0.1.0.0/build/autogen/Paths_app.hs	82;"	f
@@ -1028,6 +1065,8 @@ getDataDir	/Users/christosdemetriou/projects/ppad-black-box-visualiser/dist-news
 getDataDir	/Users/christosdemetriou/projects/ppad-black-box-visualiser/dist-newstyle/build/aarch64-osx/ghc-9.12.2/app-0.1.0.0/t/spec/build/spec/autogen/Paths_app.hs	82;"	f
 getDataDir	/Users/christosdemetriou/projects/ppad-black-box-visualiser/dist-newstyle/build/aarch64-osx/ghc-9.12.2/app-0.1.0.0/x/app/build/app/autogen/Paths_app.hs	82;"	f
 getDataDir	/Users/christosdemetriou/projects/slime-hask-simulation/dist-newstyle/build/aarch64-osx/ghc-9.12.2/app-0.1.0.0/x/app/build/app/autogen/Paths_app.hs	82;"	f
+getDataDir	/Users/christosdemetriou/projects/slime-hask-simulation/dist-newstyle/build/aarch64-osx/ghc-9.14.1/app-0.1.0.0/x/app/build/app/autogen/Paths_app.hs	82;"	f
+getDataDir	dist-newstyle/build/aarch64-osx/ghc-9.14.1/app-0.1.0.0/x/app/build/app/autogen/Paths_app.hs	82;"	f
 getDataFileName	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/build/aarch64-osx/ghc-9.12.2/app-0.1.0.0/build/autogen/Paths_app.hs	59;"	f
 getDataFileName	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/build/aarch64-osx/ghc-9.12.2/app-0.1.0.0/t/spec/build/spec/autogen/Paths_app.hs	59;"	f
 getDataFileName	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/build/aarch64-osx/ghc-9.12.2/app-0.1.0.0/x/app/build/app/autogen/Paths_app.hs	59;"	f
@@ -1036,6 +1075,8 @@ getDataFileName	/Users/christosdemetriou/projects/ppad-black-box-visualiser/dist
 getDataFileName	/Users/christosdemetriou/projects/ppad-black-box-visualiser/dist-newstyle/build/aarch64-osx/ghc-9.12.2/app-0.1.0.0/t/spec/build/spec/autogen/Paths_app.hs	59;"	f
 getDataFileName	/Users/christosdemetriou/projects/ppad-black-box-visualiser/dist-newstyle/build/aarch64-osx/ghc-9.12.2/app-0.1.0.0/x/app/build/app/autogen/Paths_app.hs	59;"	f
 getDataFileName	/Users/christosdemetriou/projects/slime-hask-simulation/dist-newstyle/build/aarch64-osx/ghc-9.12.2/app-0.1.0.0/x/app/build/app/autogen/Paths_app.hs	59;"	f
+getDataFileName	/Users/christosdemetriou/projects/slime-hask-simulation/dist-newstyle/build/aarch64-osx/ghc-9.14.1/app-0.1.0.0/x/app/build/app/autogen/Paths_app.hs	59;"	f
+getDataFileName	dist-newstyle/build/aarch64-osx/ghc-9.14.1/app-0.1.0.0/x/app/build/app/autogen/Paths_app.hs	59;"	f
 getDefaultAttr	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/AttrMap.hs	178;"	f
 getDialogFocus	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/Widgets/Dialog.hs	93;"	f
 getDynLibDir	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/build/aarch64-osx/ghc-9.12.2/app-0.1.0.0/build/autogen/Paths_app.hs	77;"	f
@@ -1046,11 +1087,15 @@ getDynLibDir	/Users/christosdemetriou/projects/ppad-black-box-visualiser/dist-ne
 getDynLibDir	/Users/christosdemetriou/projects/ppad-black-box-visualiser/dist-newstyle/build/aarch64-osx/ghc-9.12.2/app-0.1.0.0/t/spec/build/spec/autogen/Paths_app.hs	77;"	f
 getDynLibDir	/Users/christosdemetriou/projects/ppad-black-box-visualiser/dist-newstyle/build/aarch64-osx/ghc-9.12.2/app-0.1.0.0/x/app/build/app/autogen/Paths_app.hs	77;"	f
 getDynLibDir	/Users/christosdemetriou/projects/slime-hask-simulation/dist-newstyle/build/aarch64-osx/ghc-9.12.2/app-0.1.0.0/x/app/build/app/autogen/Paths_app.hs	77;"	f
+getDynLibDir	/Users/christosdemetriou/projects/slime-hask-simulation/dist-newstyle/build/aarch64-osx/ghc-9.14.1/app-0.1.0.0/x/app/build/app/autogen/Paths_app.hs	77;"	f
+getDynLibDir	dist-newstyle/build/aarch64-osx/ghc-9.14.1/app-0.1.0.0/x/app/build/app/autogen/Paths_app.hs	77;"	f
 getEditContents	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/Widgets/Edit.hs	206;"	f
 getFileInfo	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/Widgets/FileBrowser.hs	391;"	f
 getFocusGrouping	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/Forms.hs	894;"	f
 getIndxPair	/Users/christosdemetriou/projects/slime-hask-simulation/app/App.hs	70;"	f
+getIndxPair	app/App.hs	70;"	f
 getIndxSlime	/Users/christosdemetriou/projects/slime-hask-simulation/app/App.hs	76;"	f
+getIndxSlime	app/App.hs	76;"	f
 getInvalidFields	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/Forms.hs	790;"	f
 getLibDir	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/build/aarch64-osx/ghc-9.12.2/app-0.1.0.0/build/autogen/Paths_app.hs	72;"	f
 getLibDir	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/build/aarch64-osx/ghc-9.12.2/app-0.1.0.0/t/spec/build/spec/autogen/Paths_app.hs	72;"	f
@@ -1060,6 +1105,8 @@ getLibDir	/Users/christosdemetriou/projects/ppad-black-box-visualiser/dist-newst
 getLibDir	/Users/christosdemetriou/projects/ppad-black-box-visualiser/dist-newstyle/build/aarch64-osx/ghc-9.12.2/app-0.1.0.0/t/spec/build/spec/autogen/Paths_app.hs	72;"	f
 getLibDir	/Users/christosdemetriou/projects/ppad-black-box-visualiser/dist-newstyle/build/aarch64-osx/ghc-9.12.2/app-0.1.0.0/x/app/build/app/autogen/Paths_app.hs	72;"	f
 getLibDir	/Users/christosdemetriou/projects/slime-hask-simulation/dist-newstyle/build/aarch64-osx/ghc-9.12.2/app-0.1.0.0/x/app/build/app/autogen/Paths_app.hs	72;"	f
+getLibDir	/Users/christosdemetriou/projects/slime-hask-simulation/dist-newstyle/build/aarch64-osx/ghc-9.14.1/app-0.1.0.0/x/app/build/app/autogen/Paths_app.hs	72;"	f
+getLibDir	dist-newstyle/build/aarch64-osx/ghc-9.14.1/app-0.1.0.0/x/app/build/app/autogen/Paths_app.hs	72;"	f
 getLibexecDir	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/build/aarch64-osx/ghc-9.12.2/app-0.1.0.0/build/autogen/Paths_app.hs	88;"	f
 getLibexecDir	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/build/aarch64-osx/ghc-9.12.2/app-0.1.0.0/t/spec/build/spec/autogen/Paths_app.hs	88;"	f
 getLibexecDir	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/build/aarch64-osx/ghc-9.12.2/app-0.1.0.0/x/app/build/app/autogen/Paths_app.hs	88;"	f
@@ -1068,6 +1115,8 @@ getLibexecDir	/Users/christosdemetriou/projects/ppad-black-box-visualiser/dist-n
 getLibexecDir	/Users/christosdemetriou/projects/ppad-black-box-visualiser/dist-newstyle/build/aarch64-osx/ghc-9.12.2/app-0.1.0.0/t/spec/build/spec/autogen/Paths_app.hs	88;"	f
 getLibexecDir	/Users/christosdemetriou/projects/ppad-black-box-visualiser/dist-newstyle/build/aarch64-osx/ghc-9.12.2/app-0.1.0.0/x/app/build/app/autogen/Paths_app.hs	88;"	f
 getLibexecDir	/Users/christosdemetriou/projects/slime-hask-simulation/dist-newstyle/build/aarch64-osx/ghc-9.12.2/app-0.1.0.0/x/app/build/app/autogen/Paths_app.hs	88;"	f
+getLibexecDir	/Users/christosdemetriou/projects/slime-hask-simulation/dist-newstyle/build/aarch64-osx/ghc-9.14.1/app-0.1.0.0/x/app/build/app/autogen/Paths_app.hs	88;"	f
+getLibexecDir	dist-newstyle/build/aarch64-osx/ghc-9.14.1/app-0.1.0.0/x/app/build/app/autogen/Paths_app.hs	88;"	f
 getName	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/Widgets/Core.hs	169;"	f
 getNextAnimationID	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/Animation.hs	353;"	f
 getNextManagerRequest	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/Animation.hs	330;"	f
@@ -1082,16 +1131,21 @@ getSysconfDir	/Users/christosdemetriou/projects/ppad-black-box-visualiser/dist-n
 getSysconfDir	/Users/christosdemetriou/projects/ppad-black-box-visualiser/dist-newstyle/build/aarch64-osx/ghc-9.12.2/app-0.1.0.0/t/spec/build/spec/autogen/Paths_app.hs	93;"	f
 getSysconfDir	/Users/christosdemetriou/projects/ppad-black-box-visualiser/dist-newstyle/build/aarch64-osx/ghc-9.12.2/app-0.1.0.0/x/app/build/app/autogen/Paths_app.hs	93;"	f
 getSysconfDir	/Users/christosdemetriou/projects/slime-hask-simulation/dist-newstyle/build/aarch64-osx/ghc-9.12.2/app-0.1.0.0/x/app/build/app/autogen/Paths_app.hs	93;"	f
+getSysconfDir	/Users/christosdemetriou/projects/slime-hask-simulation/dist-newstyle/build/aarch64-osx/ghc-9.14.1/app-0.1.0.0/x/app/build/app/autogen/Paths_app.hs	93;"	f
+getSysconfDir	dist-newstyle/build/aarch64-osx/ghc-9.14.1/app-0.1.0.0/x/app/build/app/autogen/Paths_app.hs	93;"	f
 getTime	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/Animation/Clock.hs	38;"	f
 getVtyContext	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/Types/EventM.hs	39;"	f
 getVtyHandle	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/Main.hs	486;"	f
 getWinSize	/Users/christosdemetriou/projects/slime-hask-simulation/app/App.hs	36;"	f
+getWinSize	app/App.hs	36;"	f
 getWorkingDirectory	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/Widgets/FileBrowser.hs	456;"	f
 globalDefault	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/programs/AttrDemo.hs	57;"	f
 graphVisD	/Users/christosdemetriou/projects/ppad-black-box-visualiser/lib/Lib/GraphLibs/GraphVisualisation/GVisClass.hs	11;"	f
 graphVisU	/Users/christosdemetriou/projects/ppad-black-box-visualiser/lib/Lib/GraphLibs/GraphVisualisation/GVisClass.hs	10;"	f
 gridFactor	/Users/christosdemetriou/projects/slime-hask-simulation/app/App.hs	30;"	f
+gridFactor	app/App.hs	30;"	f
 gridSize	/Users/christosdemetriou/projects/slime-hask-simulation/app/App.hs	26;"	f
+gridSize	app/App.hs	26;"	f
 hBorder	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/Widgets/Border.hs	113;"	f
 hBorderAttr	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/Widgets/Border.hs	50;"	f
 hBorderWithLabel	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/Widgets/Border.hs	127;"	f
@@ -1137,6 +1191,8 @@ homepage	/Users/christosdemetriou/projects/ppad-black-box-visualiser/dist-newsty
 homepage	/Users/christosdemetriou/projects/ppad-black-box-visualiser/dist-newstyle/build/aarch64-osx/ghc-9.12.2/app-0.1.0.0/t/spec/build/spec/autogen/PackageInfo_app.hs	45;"	f
 homepage	/Users/christosdemetriou/projects/ppad-black-box-visualiser/dist-newstyle/build/aarch64-osx/ghc-9.12.2/app-0.1.0.0/x/app/build/app/autogen/PackageInfo_app.hs	45;"	f
 homepage	/Users/christosdemetriou/projects/slime-hask-simulation/dist-newstyle/build/aarch64-osx/ghc-9.12.2/app-0.1.0.0/x/app/build/app/autogen/PackageInfo_app.hs	45;"	f
+homepage	/Users/christosdemetriou/projects/slime-hask-simulation/dist-newstyle/build/aarch64-osx/ghc-9.14.1/app-0.1.0.0/x/app/build/app/autogen/PackageInfo_app.hs	45;"	f
+homepage	dist-newstyle/build/aarch64-osx/ghc-9.14.1/app-0.1.0.0/x/app/build/app/autogen/PackageInfo_app.hs	45;"	f
 horizontalScrollbar	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/Widgets/Core.hs	1743;"	f
 horizontalScrollbar'	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/Widgets/Core.hs	1787;"	f
 horizontalScrollbarRenderer	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/Widgets/Core.hs	1360;"	f
@@ -1150,6 +1206,7 @@ indexVS	/Users/christosdemetriou/projects/ppad-black-box-visualiser/lib/Lib/HLis
 indexVS'	/Users/christosdemetriou/projects/ppad-black-box-visualiser/lib/Lib/HList.hs	84;"	f
 infoLayer	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/programs/MouseDemo.hs	74;"	f
 initState	/Users/christosdemetriou/projects/slime-hask-simulation/app/App.hs	79;"	f
+initState	app/App.hs	79;"	f
 initialRows	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/programs/TabularListDemo.hs	129;"	f
 initialState	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/programs/CustomEventDemo.hs	62;"	f
 initialState	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/programs/DialogDemo.hs	47;"	f
@@ -1187,6 +1244,8 @@ isPathSeparator	/Users/christosdemetriou/projects/ppad-black-box-visualiser/dist
 isPathSeparator	/Users/christosdemetriou/projects/ppad-black-box-visualiser/dist-newstyle/build/aarch64-osx/ghc-9.12.2/app-0.1.0.0/t/spec/build/spec/autogen/Paths_app.hs	131;"	f
 isPathSeparator	/Users/christosdemetriou/projects/ppad-black-box-visualiser/dist-newstyle/build/aarch64-osx/ghc-9.12.2/app-0.1.0.0/x/app/build/app/autogen/Paths_app.hs	131;"	f
 isPathSeparator	/Users/christosdemetriou/projects/slime-hask-simulation/dist-newstyle/build/aarch64-osx/ghc-9.12.2/app-0.1.0.0/x/app/build/app/autogen/Paths_app.hs	131;"	f
+isPathSeparator	/Users/christosdemetriou/projects/slime-hask-simulation/dist-newstyle/build/aarch64-osx/ghc-9.14.1/app-0.1.0.0/x/app/build/app/autogen/Paths_app.hs	131;"	f
+isPathSeparator	dist-newstyle/build/aarch64-osx/ghc-9.14.1/app-0.1.0.0/x/app/build/app/autogen/Paths_app.hs	131;"	f
 itLimit	/Users/christosdemetriou/projects/ppad-black-box-visualiser/lib/Lib/GraphLibs/GraphVisualisation/FRForce.hs	22;"	f
 joinBorders	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/Widgets/Core.hs	179;"	f
 joinFileName	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/build/aarch64-osx/ghc-9.12.2/app-0.1.0.0/build/autogen/Paths_app.hs	115;"	f
@@ -1197,6 +1256,8 @@ joinFileName	/Users/christosdemetriou/projects/ppad-black-box-visualiser/dist-ne
 joinFileName	/Users/christosdemetriou/projects/ppad-black-box-visualiser/dist-newstyle/build/aarch64-osx/ghc-9.12.2/app-0.1.0.0/t/spec/build/spec/autogen/Paths_app.hs	115;"	f
 joinFileName	/Users/christosdemetriou/projects/ppad-black-box-visualiser/dist-newstyle/build/aarch64-osx/ghc-9.12.2/app-0.1.0.0/x/app/build/app/autogen/Paths_app.hs	115;"	f
 joinFileName	/Users/christosdemetriou/projects/slime-hask-simulation/dist-newstyle/build/aarch64-osx/ghc-9.12.2/app-0.1.0.0/x/app/build/app/autogen/Paths_app.hs	115;"	f
+joinFileName	/Users/christosdemetriou/projects/slime-hask-simulation/dist-newstyle/build/aarch64-osx/ghc-9.14.1/app-0.1.0.0/x/app/build/app/autogen/Paths_app.hs	115;"	f
+joinFileName	dist-newstyle/build/aarch64-osx/ghc-9.14.1/app-0.1.0.0/x/app/build/app/autogen/Paths_app.hs	115;"	f
 joinableBorder	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/Widgets/Border.hs	178;"	f
 kbKey	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/Keybindings/KeyConfig.hs	65;"	f
 kbMods	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/Keybindings/KeyConfig.hs	67;"	f
@@ -1232,6 +1293,7 @@ latestExtents	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/t
 leftTable	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/programs/TableDemo.hs	25;"	f
 len	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Data/IMap.hs	77;"	f
 lerp	/Users/christosdemetriou/projects/slime-hask-simulation/app/App.hs	33;"	f
+lerp	app/App.hs	33;"	f
 libdir	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/build/aarch64-osx/ghc-9.12.2/app-0.1.0.0/build/autogen/Paths_app.hs	98;"	f
 libdir	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/build/aarch64-osx/ghc-9.12.2/app-0.1.0.0/t/spec/build/spec/autogen/Paths_app.hs	98;"	f
 libdir	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/build/aarch64-osx/ghc-9.12.2/app-0.1.0.0/x/app/build/app/autogen/Paths_app.hs	98;"	f
@@ -1240,6 +1302,8 @@ libdir	/Users/christosdemetriou/projects/ppad-black-box-visualiser/dist-newstyle
 libdir	/Users/christosdemetriou/projects/ppad-black-box-visualiser/dist-newstyle/build/aarch64-osx/ghc-9.12.2/app-0.1.0.0/t/spec/build/spec/autogen/Paths_app.hs	98;"	f
 libdir	/Users/christosdemetriou/projects/ppad-black-box-visualiser/dist-newstyle/build/aarch64-osx/ghc-9.12.2/app-0.1.0.0/x/app/build/app/autogen/Paths_app.hs	98;"	f
 libdir	/Users/christosdemetriou/projects/slime-hask-simulation/dist-newstyle/build/aarch64-osx/ghc-9.12.2/app-0.1.0.0/x/app/build/app/autogen/Paths_app.hs	98;"	f
+libdir	/Users/christosdemetriou/projects/slime-hask-simulation/dist-newstyle/build/aarch64-osx/ghc-9.14.1/app-0.1.0.0/x/app/build/app/autogen/Paths_app.hs	98;"	f
+libdir	dist-newstyle/build/aarch64-osx/ghc-9.14.1/app-0.1.0.0/x/app/build/app/autogen/Paths_app.hs	98;"	f
 libexecdir	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/build/aarch64-osx/ghc-9.12.2/app-0.1.0.0/build/autogen/Paths_app.hs	98;"	f
 libexecdir	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/build/aarch64-osx/ghc-9.12.2/app-0.1.0.0/t/spec/build/spec/autogen/Paths_app.hs	98;"	f
 libexecdir	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/build/aarch64-osx/ghc-9.12.2/app-0.1.0.0/x/app/build/app/autogen/Paths_app.hs	98;"	f
@@ -1248,6 +1312,8 @@ libexecdir	/Users/christosdemetriou/projects/ppad-black-box-visualiser/dist-news
 libexecdir	/Users/christosdemetriou/projects/ppad-black-box-visualiser/dist-newstyle/build/aarch64-osx/ghc-9.12.2/app-0.1.0.0/t/spec/build/spec/autogen/Paths_app.hs	98;"	f
 libexecdir	/Users/christosdemetriou/projects/ppad-black-box-visualiser/dist-newstyle/build/aarch64-osx/ghc-9.12.2/app-0.1.0.0/x/app/build/app/autogen/Paths_app.hs	98;"	f
 libexecdir	/Users/christosdemetriou/projects/slime-hask-simulation/dist-newstyle/build/aarch64-osx/ghc-9.12.2/app-0.1.0.0/x/app/build/app/autogen/Paths_app.hs	98;"	f
+libexecdir	/Users/christosdemetriou/projects/slime-hask-simulation/dist-newstyle/build/aarch64-osx/ghc-9.14.1/app-0.1.0.0/x/app/build/app/autogen/Paths_app.hs	98;"	f
+libexecdir	dist-newstyle/build/aarch64-osx/ghc-9.14.1/app-0.1.0.0/x/app/build/app/autogen/Paths_app.hs	98;"	f
 limitPrimary	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/Widgets/Core.hs	548;"	f
 lineNumberAttr	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/programs/EditorLineNumbersDemo.hs	110;"	f
 list	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/Widgets/List.hs	267;"	f
@@ -1347,7 +1413,9 @@ main	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11
 main	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/tests/Render.hs	35;"	f
 main	/Users/christosdemetriou/projects/ppad-black-box-visualiser/app/Main.hs	17;"	f
 main	/Users/christosdemetriou/projects/slime-hask-simulation/app/Main.hs	8;"	f
+main	app/Main.hs	8;"	f
 mainApp	/Users/christosdemetriou/projects/slime-hask-simulation/app/App.hs	185;"	f
+mainApp	app/App.hs	185;"	f
 mainLoop	/Users/christosdemetriou/projects/hask-tui-drawing/lib/Lib/AppState.hs	23;"	f
 makeEmpty	/Users/christosdemetriou/projects/hask-tui-drawing/lib/Lib/AppState.hs	34;"	f
 makeFieldName	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/Themes.hs	344;"	f
@@ -1389,6 +1457,8 @@ name	/Users/christosdemetriou/projects/ppad-black-box-visualiser/dist-newstyle/b
 name	/Users/christosdemetriou/projects/ppad-black-box-visualiser/dist-newstyle/build/aarch64-osx/ghc-9.12.2/app-0.1.0.0/t/spec/build/spec/autogen/PackageInfo_app.hs	32;"	f
 name	/Users/christosdemetriou/projects/ppad-black-box-visualiser/dist-newstyle/build/aarch64-osx/ghc-9.12.2/app-0.1.0.0/x/app/build/app/autogen/PackageInfo_app.hs	32;"	f
 name	/Users/christosdemetriou/projects/slime-hask-simulation/dist-newstyle/build/aarch64-osx/ghc-9.12.2/app-0.1.0.0/x/app/build/app/autogen/PackageInfo_app.hs	32;"	f
+name	/Users/christosdemetriou/projects/slime-hask-simulation/dist-newstyle/build/aarch64-osx/ghc-9.14.1/app-0.1.0.0/x/app/build/app/autogen/PackageInfo_app.hs	32;"	f
+name	dist-newstyle/build/aarch64-osx/ghc-9.14.1/app-0.1.0.0/x/app/build/app/autogen/PackageInfo_app.hs	32;"	f
 neigh	/Users/christosdemetriou/projects/ppad-black-box-visualiser/lib/Lib/GraphLibs/GraphClass.hs	40;"	f
 neighbors	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/BorderMap.hs	30;"	f
 nestEventM	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/Types.hs	128;"	f
@@ -1442,6 +1512,8 @@ pathSeparator	/Users/christosdemetriou/projects/ppad-black-box-visualiser/dist-n
 pathSeparator	/Users/christosdemetriou/projects/ppad-black-box-visualiser/dist-newstyle/build/aarch64-osx/ghc-9.12.2/app-0.1.0.0/t/spec/build/spec/autogen/Paths_app.hs	128;"	f
 pathSeparator	/Users/christosdemetriou/projects/ppad-black-box-visualiser/dist-newstyle/build/aarch64-osx/ghc-9.12.2/app-0.1.0.0/x/app/build/app/autogen/Paths_app.hs	128;"	f
 pathSeparator	/Users/christosdemetriou/projects/slime-hask-simulation/dist-newstyle/build/aarch64-osx/ghc-9.12.2/app-0.1.0.0/x/app/build/app/autogen/Paths_app.hs	128;"	f
+pathSeparator	/Users/christosdemetriou/projects/slime-hask-simulation/dist-newstyle/build/aarch64-osx/ghc-9.14.1/app-0.1.0.0/x/app/build/app/autogen/Paths_app.hs	128;"	f
+pathSeparator	dist-newstyle/build/aarch64-osx/ghc-9.14.1/app-0.1.0.0/x/app/build/app/autogen/Paths_app.hs	128;"	f
 pingPongClip	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/Animation.hs	135;"	f
 pixels	/Users/christosdemetriou/projects/hask-tui-drawing/lib/Lib.hs	4;"	f
 ppBinding	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/Keybindings/Pretty.hs	174;"	f
@@ -1519,6 +1591,7 @@ removeAnimation	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle
 removeTrailingSlash	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/Widgets/FileBrowser.hs	313;"	f
 render	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/Types/Internal.hs	138;"	f
 render	/Users/christosdemetriou/projects/slime-hask-simulation/app/App.hs	118;"	f
+render	app/App.hs	118;"	f
 renderAnimation	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/Animation.hs	178;"	f
 renderApp	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/Main.hs	512;"	f
 renderBottomUp	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/programs/TailDemo.hs	54;"	f
@@ -1646,6 +1719,7 @@ startAnimationFromConfig	/Users/christosdemetriou/projects/hask-tui-drawing/dist
 startAnimationManager	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/Animation.hs	504;"	f
 startMouseClickAnimation	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/programs/AnimationDemo.hs	167;"	f
 step	/Users/christosdemetriou/projects/slime-hask-simulation/app/App.hs	139;"	f
+step	app/App.hs	139;"	f
 stopAnimation	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/Animation.hs	583;"	f
 stopAnimationManager	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/Animation.hs	540;"	f
 str	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/Widgets/Core.hs	330;"	f
@@ -1668,6 +1742,8 @@ synopsis	/Users/christosdemetriou/projects/ppad-black-box-visualiser/dist-newsty
 synopsis	/Users/christosdemetriou/projects/ppad-black-box-visualiser/dist-newstyle/build/aarch64-osx/ghc-9.12.2/app-0.1.0.0/t/spec/build/spec/autogen/PackageInfo_app.hs	39;"	f
 synopsis	/Users/christosdemetriou/projects/ppad-black-box-visualiser/dist-newstyle/build/aarch64-osx/ghc-9.12.2/app-0.1.0.0/x/app/build/app/autogen/PackageInfo_app.hs	39;"	f
 synopsis	/Users/christosdemetriou/projects/slime-hask-simulation/dist-newstyle/build/aarch64-osx/ghc-9.12.2/app-0.1.0.0/x/app/build/app/autogen/PackageInfo_app.hs	39;"	f
+synopsis	/Users/christosdemetriou/projects/slime-hask-simulation/dist-newstyle/build/aarch64-osx/ghc-9.14.1/app-0.1.0.0/x/app/build/app/autogen/PackageInfo_app.hs	39;"	f
+synopsis	dist-newstyle/build/aarch64-osx/ghc-9.14.1/app-0.1.0.0/x/app/build/app/autogen/PackageInfo_app.hs	39;"	f
 sysconfdir	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/build/aarch64-osx/ghc-9.12.2/app-0.1.0.0/build/autogen/Paths_app.hs	98;"	f
 sysconfdir	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/build/aarch64-osx/ghc-9.12.2/app-0.1.0.0/t/spec/build/spec/autogen/Paths_app.hs	98;"	f
 sysconfdir	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/build/aarch64-osx/ghc-9.12.2/app-0.1.0.0/x/app/build/app/autogen/Paths_app.hs	98;"	f
@@ -1676,6 +1752,8 @@ sysconfdir	/Users/christosdemetriou/projects/ppad-black-box-visualiser/dist-news
 sysconfdir	/Users/christosdemetriou/projects/ppad-black-box-visualiser/dist-newstyle/build/aarch64-osx/ghc-9.12.2/app-0.1.0.0/t/spec/build/spec/autogen/Paths_app.hs	98;"	f
 sysconfdir	/Users/christosdemetriou/projects/ppad-black-box-visualiser/dist-newstyle/build/aarch64-osx/ghc-9.12.2/app-0.1.0.0/x/app/build/app/autogen/Paths_app.hs	98;"	f
 sysconfdir	/Users/christosdemetriou/projects/slime-hask-simulation/dist-newstyle/build/aarch64-osx/ghc-9.12.2/app-0.1.0.0/x/app/build/app/autogen/Paths_app.hs	98;"	f
+sysconfdir	/Users/christosdemetriou/projects/slime-hask-simulation/dist-newstyle/build/aarch64-osx/ghc-9.14.1/app-0.1.0.0/x/app/build/app/autogen/Paths_app.hs	98;"	f
+sysconfdir	dist-newstyle/build/aarch64-osx/ghc-9.14.1/app-0.1.0.0/x/app/build/app/autogen/Paths_app.hs	98;"	f
 table	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/Widgets/Table.hs	150;"	f
 tableBorderConfiguration	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/Widgets/Table.hs	100;"	f
 tableCellLayout	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/Widgets/Table.hs	307;"	f
@@ -1759,6 +1837,7 @@ updateAttrMap	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/t
 updateFileBrowserSearch	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/Widgets/FileBrowser.hs	483;"	f
 updateFormState	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/Forms.hs	270;"	f
 updateSlime	/Users/christosdemetriou/projects/slime-hask-simulation/app/Slime.hs	17;"	f
+updateSlime	app/Slime.hs	17;"	f
 vBorder	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/Widgets/Border.hs	137;"	f
 vBorderAttr	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/Widgets/Border.hs	54;"	f
 vBox	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/Widgets/Core.hs	505;"	f
@@ -1795,6 +1874,10 @@ version	/Users/christosdemetriou/projects/ppad-black-box-visualiser/dist-newstyl
 version	/Users/christosdemetriou/projects/ppad-black-box-visualiser/dist-newstyle/build/aarch64-osx/ghc-9.12.2/app-0.1.0.0/x/app/build/app/autogen/Paths_app.hs	52;"	f
 version	/Users/christosdemetriou/projects/slime-hask-simulation/dist-newstyle/build/aarch64-osx/ghc-9.12.2/app-0.1.0.0/x/app/build/app/autogen/PackageInfo_app.hs	35;"	f
 version	/Users/christosdemetriou/projects/slime-hask-simulation/dist-newstyle/build/aarch64-osx/ghc-9.12.2/app-0.1.0.0/x/app/build/app/autogen/Paths_app.hs	52;"	f
+version	/Users/christosdemetriou/projects/slime-hask-simulation/dist-newstyle/build/aarch64-osx/ghc-9.14.1/app-0.1.0.0/x/app/build/app/autogen/PackageInfo_app.hs	35;"	f
+version	/Users/christosdemetriou/projects/slime-hask-simulation/dist-newstyle/build/aarch64-osx/ghc-9.14.1/app-0.1.0.0/x/app/build/app/autogen/Paths_app.hs	52;"	f
+version	dist-newstyle/build/aarch64-osx/ghc-9.14.1/app-0.1.0.0/x/app/build/app/autogen/PackageInfo_app.hs	35;"	f
+version	dist-newstyle/build/aarch64-osx/ghc-9.14.1/app-0.1.0.0/x/app/build/app/autogen/Paths_app.hs	52;"	f
 vertexList	/Users/christosdemetriou/projects/ppad-black-box-visualiser/lib/Lib/GraphLibs/GraphClass.hs	41;"	f
 verticalScrollbar	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/Widgets/Core.hs	1630;"	f
 verticalScrollbar'	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/Widgets/Core.hs	1671;"	f
@@ -1834,6 +1917,7 @@ weights	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src
 whenRunning	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/Animation.hs	534;"	f
 window	/Users/christosdemetriou/projects/ppad-black-box-visualiser/app/Main.hs	8;"	f
 window	/Users/christosdemetriou/projects/slime-hask-simulation/app/App.hs	40;"	f
+window	app/App.hs	40;"	f
 windowHeight	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/Types/Internal.hs	439;"	f
 windowWidth	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/Types/Internal.hs	438;"	f
 withAttr	/Users/christosdemetriou/projects/hask-tui-drawing/dist-newstyle/tmp/src-11105/brick-2.10/src/Brick/Widgets/Core.hs	932;"	f
