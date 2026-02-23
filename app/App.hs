@@ -9,7 +9,7 @@ import Data.Bifunctor (Bifunctor (bimap))
 import Data.Maybe (fromJust, isJust, mapMaybe)
 import Data.Tuple (swap)
 import Debug.Trace (traceShow)
-import Data.Massiv.Array as A
+import qualified Data.Massiv.Array as A
 import qualified Data.Massiv.Array.Mutable as MA
 import GHC.Float qualified as Math
 import GHC.ST (ST (ST))
@@ -22,23 +22,29 @@ import Graphics.Gloss.Interface.IO.Simulate (simulateIO)
 import Lens.Micro.Platform
 import Slime
 import System.Random
+import Data.Massiv.Array (avgStencil)
 
 gridSize :: (Int, Int)
-gridSize = (48, 32)
+gridSize = (100, 100)
+
+
+winDims :: (Float, Float)
+winDims = (800, 600)
 
 --- W, H
 gridFactor :: (Float, Float)
-gridFactor = (800 / 48, 600 / 32)
+gridFactor = winDims & bimap  ((/ fromIntegral w) ) ((/fromIntegral h))
+    where
+        (w,h) = gridSize
+
+
 
 lerp :: Float -> Float -> Float -> Float
 lerp x y t = x * t + y * (1 - t)
 
-getWinSize = bimap (fromIntegral w *) (fromIntegral h *) gridFactor
-  where
-    (w, h) = gridSize
 
 window :: Display
-window = InWindow "Nice window?" (bimap floor floor getWinSize) (100, 100)
+window = InWindow "Nice window?" (bimap floor floor winDims) (100, 100)
 
 bgColour :: Color
 bgColour = black
@@ -46,11 +52,14 @@ bgColour = black
 drawing :: Picture
 drawing = color white $ thickCircle 80 5
 
-type ImageType = A.Array U Ix2 Float
+type ImageType = A.Array A.P A.Ix2 Float
+type MImageType s = MA.MArray s A.P A.Ix2 Float
 
 data SimSet = SimSet
     { _movSpeed :: Float
     , _numSlimes :: Int
+    , _diffSpeed :: Float
+    , _evapSpeed :: Float
     , _angleDt :: Float
     }
 
@@ -73,23 +82,28 @@ getIndxPair (x, y) = i
     (w, _) = gridSize
     i = y * w + x
 
+
+writeSlimesImg :: ImageType -> [Slime] -> ImageType 
+writeSlimesImg im slimes = snd $ 
+    runST $ A.withMArrayS im $ \arr -> 
+                forM_ slimes $ \s -> do
+                    let (x, y) = s ^. pos & bimap floor floor
+                    A.writeM arr (y A.:. x) 1.0
+
 getIndxSlime :: Slime -> Int
 getIndxSlime = getIndxPair . bimap floor floor . (^. pos)
 
 initState :: StdGen -> SimSet -> AppState
-initState gen set = uncurry ($) $ runRand (evalStateT mainInit emptySt) gen
+initState gen set = uncurry ($) $ runRand mainInit gen
   where
-    emptySt = V.replicate (gridSize & uncurry (*)) 0
-    mainInit :: AppM (StdGen -> AppState)
+    (w, h) = gridSize
+    mainInit :: RandomGen g => Rand g (StdGen -> AppState)
     mainInit = do
-        s <- replicateM (set ^. numSlimes) randomSlime
-        forM_ s $ \slime -> do
-            let i = getIndxSlime slime
-            ix i .= 1.0
-        img <- get
-        return (,SimState{_slimes = s, _settings = set, _image = img})
+        slimes <-  replicateM (set ^. numSlimes) randomSlime
+        let empt =  (A.replicate A.Par (A.Sz (h A.:. w))  0.0) :: ImageType
+        return  (,SimState{_slimes =  slimes, _settings = set, _image = writeSlimesImg empt slimes})
 
-    randomSlime :: AppM Slime
+    randomSlime :: RandomGen g => Rand g Slime
     randomSlime = do
         let (width, height) = gridSize
         x <- getRandomR (0, fromIntegral width - 1)
@@ -101,35 +115,33 @@ initState gen set = uncurry ($) $ runRand (evalStateT mainInit emptySt) gen
                 , _sAngle = theta
                 }
 
-drawSquare :: V.Vector Float -> (Int, Int) -> Picture
-drawSquare im (x, y) =
-    color col
-        $ translate
+drawSquare :: ImageType -> A.Ix2 -> Picture
+drawSquare im ix@(y A.:. x) =
+    if intensity == 0 then blank else 
+        color col $ translate
             (-(wW / 2) + fromIntegral x * fst gridFactor)
             (-(wH / 2) + fromIntegral y * snd gridFactor)
         $ uncurry rectangleSolid gridFactor
   where
-    (wW, wH) = getWinSize
+    (wW, wH) = winDims
     (w, h) = gridSize
-    ind = getIndxPair (x, y)
-    intensity = im V.! ind
+    intensity =   im A.! ix
     col = greyN intensity
 
 render :: AppState -> Picture
-render st = pictures [draw (x, y) | x <- [0 .. w - 1], y <- [0 .. h - 1]]
+render st = pictures [draw (y A.:.x) | x <- [0 .. w - 1], y <- [0 .. h - 1]]
   where
     state = st ^. _2
-    comp = V.any (/= 0) (state ^. image)
     gridSet = state ^. settings
     (w, h) = gridSize
     im = state ^. image
     draw = drawSquare im
 
-addP :: (Int, Int) -> (Int, Int) -> Maybe Int
+addP :: (Int, Int) -> (Int, Int) -> Maybe A.Ix2
 addP (x, y) (dx, dy) =
     if w > x' && x' >= 0 && h > y' && y' >= 0
         then
-            Just $ getIndxPair (x', y')
+            Just $ (y' A.:. x')
         else
             Nothing
   where
@@ -144,13 +156,8 @@ step dt st = swap $ runRand (execStateT mainStep (st ^. _2)) (st ^. _1)
         s <- use slimes
         im <- use image
         newSlimes <- lift $ mapM (updateSlimePosition dt im) s
-        let newImage = runST $ do
-                mV <- V.unsafeThaw im
-                applyDefusion mV dt
-                drawSlimes newSlimes mV
-                V.freeze mV
         slimes .= newSlimes
-        image .= newImage
+        image %= drawSlimes newSlimes . flip applyDefusion dt
         return ()
 
     set = st ^. _2 . settings
@@ -158,29 +165,27 @@ step dt st = swap $ runRand (execStateT mainStep (st ^. _2)) (st ^. _1)
     updateSlimePosition :: Float -> ImageType -> Slime -> Rand StdGen Slime
     updateSlimePosition dt im s = do
         r <- getRandomR (-1.0, 1.0)
-        let angle = s ^. sAngle + r * (set ^. angleDt)
-        let (w, h) = bimap fromIntegral fromIntegral gridSize
-        let clamp m = min (m - 1) . max 0
-        let newPos = s ^. pos VA.+ (mulSV (dt * 15.0) $ unitVectorAtAngle angle)
+        let angle = s ^. sAngle + r * (set ^. angleDt * dt)
+        let (w, h) =  gridSize
+        let clamp m = min (fromIntegral m - 1) . max 0
+        let newPos = s ^. pos VA.+ (mulSV (dt * set ^. movSpeed) $ unitVectorAtAngle angle)
         let nPos = newPos & bimap (clamp w) (clamp h)
         return Slime{_sAngle = angle, _pos = nPos}
 
-    drawSlimes :: [Slime] -> MV.MVector s Float -> ST s ()
-    drawSlimes sm img = forM_ sm $ \s -> do
-        let indx = getIndxSlime s
-        MV.write img indx 1
+    drawSlimes :: [Slime] -> ImageType -> ImageType
+    drawSlimes sm img = snd $ runST $ A.withMArrayS img $ \marr -> do
+        forM_ sm $ \slime -> do
+            let (x,y) = slime ^. pos & bimap floor floor
+            A.writeM marr (y A.:. x) 1.0
 
-    applyDefusion :: MV.MVector s Float -> Float -> ST s ()
-    applyDefusion im dt = forM_ [(x, y) | x <- [0 .. w - 1], y <- [0 .. h - 1]] $ \p -> do
-        let xt = mapMaybe (addP p) [(dx, dy) | dx <- [-1, 0, 1], dy <- [-1, 0, 1]]
-        nVals <- forM xt $ MV.read im
-        curr <- MV.read im (getIndxPair p)
-        let blurred = sum nVals / 9
-        let diffused = lerp curr blurred (0.1 * dt)
-        let evap = max 0 (diffused - 0.01 * dt)
-        MV.write im (getIndxPair p) evap
-      where
-        (w, h) = gridSize
+    applyDefusion :: ImageType -> Float -> ImageType
+    applyDefusion im dt = diffused
+        where
+            diff = (A.computeP $ A.applyStencil (A.samePadding (A.avgStencil 3) (A.Fill 0.0)) (A.avgStencil 3) im) :: ImageType
+            t = max 0 $ min 1 $ dt * (set ^. diffSpeed)
+            diffused = A.computeP $ A.map (max 0) $ (t A.*. im) A.!+! ((1 - t) A.*. diff) A..- (set ^. evapSpeed * dt)
+
+
 
 mainApp :: IO ()
 mainApp = do
@@ -188,14 +193,16 @@ mainApp = do
     simulate
         window
         black
-        60
+        120
         (initState gen setting)
         render
         (const step)
   where
     setting =
         SimSet
-            { _movSpeed = 10
-            , _numSlimes = 10
-            , _angleDt = pi / 4
+            { _movSpeed = 50
+            , _numSlimes = 25
+            , _angleDt = 8 * pi
+            , _diffSpeed = 0.1
+            , _evapSpeed = 0.1
             }
