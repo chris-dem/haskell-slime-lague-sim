@@ -54,7 +54,7 @@ lerp x y t = x * t + y * (1 - t)
 
 
 window :: Display
-window = InWindow "Nice window?" (bimap floor floor winDims) (100, 100)
+window = InWindow "Slime haskell" (bimap floor floor winDims) (100, 100)
 
 bgColour :: Color
 bgColour = black
