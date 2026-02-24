@@ -20,10 +20,11 @@ executable app
       Paths_app
   hs-source-dirs:
       app
-  ghc-options: -threaded
+  ghc-options: -threaded -fprof-auto -rtsopts -O2
   build-depends:
       MonadRandom
     , base
+    , bytestring
     , containers
     , gloss
     , massiv

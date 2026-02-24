@@ -14,11 +14,16 @@ dependencies:
   - MonadRandom
   - gloss
   - massiv
+  - bytestring
 
 executables:
   app:
     main: Main.hs
     source-dirs: app
     language: GHC2024
-    ghc-options: -threaded
+    ghc-options:
+      - -threaded
+      - -fprof-auto
+      - -rtsopts
+      - -O2
 

@@ -2,13 +2,18 @@
 
 module App where
 
+import Data.Massiv.Array.Stencil as S
 import Control.Monad.Random (MonadRandom (getRandom, getRandomR), MonadTrans (lift), Rand, StdGen, foldM, forM, forM_, mkStdGen, replicateM, runRand, runRandT, when)
+import Data.Word (Word8)
 import Control.Monad.ST (runST)
 import Control.Monad.State (MonadState (get), StateT (StateT, runStateT), evalStateT, execStateT, gets)
+import qualified Data.ByteString.Internal as BS
 import Data.Bifunctor (Bifunctor (bimap))
+import qualified Data.Vector.Storable as VS
 import Data.Maybe (fromJust, isJust, mapMaybe)
 import Data.Tuple (swap)
 import Debug.Trace (traceShow)
+import  Data.Massiv.Array.Stencil as S
 import qualified Data.Massiv.Array as A
 import qualified Data.Massiv.Array.Mutable as MA
 import GHC.Float qualified as Math
@@ -23,9 +28,14 @@ import Lens.Micro.Platform
 import Slime
 import System.Random
 import Data.Massiv.Array (avgStencil)
+import Graphics.Gloss.Interface.IO.Game (Event(EventKey), Key (SpecialKey), SpecialKey (KeyEsc), KeyState (Down), playIO)
+import System.Exit (exitSuccess)
+import System.IO.Unsafe (unsafePerformIO)
+import Foreign.Ptr (plusPtr)
+import Foreign.Storable (Storable(poke))
 
 gridSize :: (Int, Int)
-gridSize = (100, 100)
+gridSize = (400, 300)
 
 
 winDims :: (Float, Float)
@@ -60,6 +70,9 @@ data SimSet = SimSet
     , _numSlimes :: Int
     , _diffSpeed :: Float
     , _evapSpeed :: Float
+    , _senseDist :: Float
+    , _senseTheta :: Float
+    , _senseWin :: Int
     , _angleDt :: Float
     }
 
@@ -129,13 +142,38 @@ drawSquare im ix@(y A.:. x) =
     col = greyN intensity
 
 render :: AppState -> Picture
-render st = pictures [draw (y A.:.x) | x <- [0 .. w - 1], y <- [0 .. h - 1]]
+render st = scale sW sH $ renderToBitMap (st ^. _2 .image)
   where
-    state = st ^. _2
-    gridSet = state ^. settings
+    (wW, wH) = winDims
+    (sW, sH) = gridFactor
+
+
+renderToBitMap :: ImageType -> Picture
+renderToBitMap arr = bitmapOfByteString w h bpFormat im False
+  where
     (w, h) = gridSize
-    im = state ^. image
-    draw = drawSquare im
+    bpFormat = BitmapFormat { rowOrder = BottomToTop, pixelFormat = PxRGBA }
+
+    vec = A.toStorableVector $ A.computeAs A.S arr
+
+    len = VS.length vec
+
+    clampToWord8 :: Float -> Word8
+    clampToWord8 x = fromIntegral (floor (max 0 (min 1 x) * 255) :: Int)
+
+    im = BS.unsafeCreate (4 * len) $ \ptr -> do
+      let go i
+            | i == len = return ()
+            | otherwise = do
+                let x = VS.unsafeIndex vec i
+                    val = clampToWord8 x
+                    base = plusPtr ptr (4 * i)
+                poke base (0 :: Word8)
+                poke (plusPtr base 1) val
+                poke (plusPtr base 2) (0 :: Word8)
+                poke (plusPtr base 3) (255 :: Word8)
+                go (i + 1)
+      go 0
 
 addP :: (Int, Int) -> (Int, Int) -> Maybe A.Ix2
 addP (x, y) (dx, dy) =
@@ -148,8 +186,12 @@ addP (x, y) (dx, dy) =
     (x', y') = (x + dx, y + dy)
     (w, h) = gridSize
 
-step :: Float -> AppState -> AppState
-step dt st = swap $ runRand (execStateT mainStep (st ^. _2)) (st ^. _1)
+
+clamp :: Int -> Float -> Float
+clamp m  x = max 0 $ min (fromIntegral m -1) x
+
+step :: Float -> AppState -> IO AppState
+step dt st = pure $ swap $ runRand (execStateT mainStep (st ^. _2)) (st ^. _1)
   where
     mainStep :: StateT SimState (Rand StdGen) ()
     mainStep = do
@@ -162,15 +204,38 @@ step dt st = swap $ runRand (execStateT mainStep (st ^. _2)) (st ^. _1)
 
     set = st ^. _2 . settings
 
+
     updateSlimePosition :: Float -> ImageType -> Slime -> Rand StdGen Slime
     updateSlimePosition dt im s = do
-        r <- getRandomR (-1.0, 1.0)
-        let angle = s ^. sAngle + r * (set ^. angleDt * dt)
+        randSteerStrength <- getRandomR (0.0, 1.0)
+        let weightStraight = sense 0
+        let weightLeft = sense (set ^. senseTheta)
+        let weightRight = sense (- set ^. senseTheta)
+        let turnSpeed = set ^. angleDt * 2 * pi
+        let angleC = if (weightStraight > max weightLeft weightRight) then 0 else
+                if (weightStraight < min weightLeft weightRight) then (randSteerStrength - 0.5)  * 2 * turnSpeed* dt else
+                    if (weightRight > weightLeft) then - randSteerStrength   * turnSpeed* dt else
+                        randSteerStrength   * turnSpeed* dt 
+        let newAngle = s ^. sAngle + angleC 
+        let dir = unitVectorAtAngle newAngle
         let (w, h) =  gridSize
-        let clamp m = min (fromIntegral m - 1) . max 0
-        let newPos = s ^. pos VA.+ (mulSV (dt * set ^. movSpeed) $ unitVectorAtAngle angle)
-        let nPos = newPos & bimap (clamp w) (clamp h)
-        return Slime{_sAngle = angle, _pos = nPos}
+
+        let newPos = s ^. pos VA.+ (mulSV (dt * set ^. movSpeed) dir)
+        let nAng = if newPos ^. _1 < 0 ||  newPos ^.  (_1 . to ceiling)   >= w || newPos ^. _2 < 0 || newPos ^. (_2 . to ceiling) >= h then newAngle - pi else newAngle
+        let nPos =  newPos & bimap (clamp w) (clamp h)
+        return Slime{_sAngle = nAng, _pos = nPos}
+        where 
+            sense :: Float ->  Float
+            sense angle = v
+                where
+                    ang = s ^. sAngle + angle
+                    dir = unitVectorAtAngle ang
+                    (x,y) = s ^.pos VA.+ (mulSV (set ^. senseDist) dir) & bimap floor floor
+                    foo (Just x ) = x
+                    foo Nothing = 0
+                    v = sum [foo $ A.index im  (y A.:. x) |dx <- [- set ^.senseWin ..  set ^.senseWin], dy <- [- set ^.senseWin ..  set ^.senseWin]]
+
+
 
     drawSlimes :: [Slime] -> ImageType -> ImageType
     drawSlimes sm img = snd $ runST $ A.withMArrayS img $ \marr -> do
@@ -179,30 +244,55 @@ step dt st = swap $ runRand (execStateT mainStep (st ^. _2)) (st ^. _1)
             A.writeM marr (y A.:. x) 1.0
 
     applyDefusion :: ImageType -> Float -> ImageType
-    applyDefusion im dt = diffused
-        where
-            diff = (A.computeP $ A.applyStencil (A.samePadding (A.avgStencil 3) (A.Fill 0.0)) (A.avgStencil 3) im) :: ImageType
-            t = max 0 $ min 1 $ dt * (set ^. diffSpeed)
-            diffused = A.computeP $ A.map (max 0) $ (t A.*. im) A.!+! ((1 - t) A.*. diff) A..- (set ^. evapSpeed * dt)
+    applyDefusion im dt = A.computeP final
+      where
+        t = max 0 $ min 1 $ dt * (set ^. diffSpeed)
+        evap = set ^. evapSpeed * dt   -- precompute small constant
+        -- -- 3×3 average stencil with constant 0 padding at borders
+        avg3x3Stencil = A.makeStencil (A.Sz (3 A.:. 3)) (1 A.:. 1) $ \get ->
+            let 
+                center = get (0 A.:.0)
+                sm = (get (0  A.:. -1)
+                    + get (0  A.:.  1)
+                    + get (-1 A.:. -1)
+                    + get (-1 A.:.  0) 
+                    + get (-1 A.:.  1)
+                    + get (1  A.:. -1)
+                    + get (1  A.:.  0)
+                    + get (1  A.:.  1))
+                blurred = (center + sm)/9
+                diffused = t * center + (1 -t)* blurred - evap
+            in 
+                max 0 $  diffused
 
+        -- Apply stencil to im, producing blurred version (delayed)
+        -- final = A.applyStencil (A.samePadding (avgStencil 3) (A.Fill 0.0)) (avgStencil 3) im
+        final = A.applyStencil (A.samePadding (avg3x3Stencil) (A.Fill 0.0)) (avg3x3Stencil) im
 
+handleEvent :: Event -> AppState -> IO AppState
+handleEvent (EventKey (SpecialKey KeyEsc) Down _ _) _ = exitSuccess
+handleEvent _ st = pure st
 
 mainApp :: IO ()
 mainApp = do
     gen <- getStdGen
-    simulate
+    playIO
         window
         black
         120
         (initState gen setting)
-        render
-        (const step)
+        (pure. render)
+        handleEvent
+        (const step 0.01)
   where
     setting =
         SimSet
             { _movSpeed = 50
-            , _numSlimes = 25
-            , _angleDt = 8 * pi
+            , _numSlimes = 150
+            , _angleDt = 2
             , _diffSpeed = 0.1
+            , _senseDist = 5
+            , _senseTheta = pi/ 4
             , _evapSpeed = 0.1
+           , _senseWin  = 2
             }
