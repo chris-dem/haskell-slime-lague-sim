@@ -5,7 +5,4 @@ Image preview:
 
 ![Slime picture](./image-example.png)
 
-
-
-![](https://github.com/user-attachments/assets/54415916-175c-4342-b72b-044c07266af1)
-
+[output.webm](https://github.com/user-attachments/assets/ba370fac-0332-4e5a-b1ee-c165597cfd6a)
