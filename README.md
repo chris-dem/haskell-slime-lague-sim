@@ -4,4 +4,4 @@ Recreation of [Sebastian Lague Slime Code](https://github.com/SebLague/Slime-Sim
 Image preview: 
 
 ![Slime picture](./image-example.png)
-![Slime video](./recording.mov)
+![Slime video](./output.mp4)
